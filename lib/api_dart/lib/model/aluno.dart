@@ -6,7 +6,7 @@ import 'package:dart_api/api_dart/lib/model/endereco.dart';
 import 'curso.dart';
 
 class Aluno {
-  String id;
+  String? id;
   String nome;
   int? idade;
   bool isAluno;
@@ -15,7 +15,7 @@ class Aluno {
   Endereco endereco;
 
   Aluno({
-    required this.id,
+    this.id,
     required this.nome,
     required this.idade,
     required this.isAluno,
@@ -31,12 +31,8 @@ class Aluno {
       'idade': idade,
       'isAluno': isAluno,
       'nomesCurso': nomesCurso,
-      'cursos': [
-        {
-          cursos.map((curso) => curso.toMap()).toList(),
-        }
-      ],
-      'endereco': endereco.toMap()
+      'cursos': cursos,
+      'endereco': endereco.toMap(),
     };
   }
 
@@ -52,7 +48,8 @@ class Aluno {
     );
   }
 
-  String toJson() => jsonEncode(toMap());
+//encode
+  String toJson() => json.encode(toMap());
   factory Aluno.fromJson(String json) => Aluno.fromMap(jsonDecode(json));
 
   @override
