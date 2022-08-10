@@ -1,1 +1,118 @@
-{"alunos":[{"id":"1","nome":"Natan Valim Cardoso","idade":21,"isAluno":true,"nomesCurso":["Masterclass","Alura","Udemy Flutter","Academia do Flutter","TESTE TESTE"],"cursos":["{\"id\":1,\"nome\":\"Masterclass\",\"isAluno\":true}","{\"id\":2,\"nome\":\"Imersão Bloc\",\"isAluno\":false}"],"endereco":{"rua":"Rua Governador Jorge Lacerda","CEP":"09050496911","numero":12,"cidade":{"id":1,"nome":"São Paulo"},"telefone":{"ddd":11,"numero":"48991749818"}}},{"id":"2","nome":"Ana Valim Cardoso","idade":17,"isAluno":false,"nomesCurso":["Masterclass","Alura","Udemy Flutter","Academia do Flutter","TESTE TESTE"],"cursos":["{\"id\":1,\"nome\":\"Masterclass\",\"isAluno\":true}","{\"id\":2,\"nome\":\"Imersão Bloc\",\"isAluno\":false}"],"endereco":{"rua":"Rua Governador Jorge Lacerda","CEP":"09050496911","numero":12,"cidade":{"id":1,"nome":"São Paulo"},"telefone":{"ddd":11,"numero":"48991749818"}}},{"id":"9db01e80-18ac-11ed-b51f-d9bc21ae7416","nome":"Teste","idade":15,"isAluno":true,"nomesCurso":["teste","teste"],"cursos":["{\"id\":1,\"nome\":\"teste\",\"isAluno\":false}","{\"id\":2,\"nome\":\"teste 2\",\"isAluno\":true}"],"endereco":{"rua":"teste","CEP":"09052","numero":233,"cidade":{"id":1,"nome":"Torres"},"telefone":{"ddd":55,"numero":"48991749818"}}},{"id":"a76ddcf0-18ac-11ed-b51f-d9bc21ae7416","nome":"Teste","idade":15,"isAluno":true,"nomesCurso":["teste","teste"],"cursos":["{\"id\":1,\"nome\":\"teste\",\"isAluno\":false}","{\"id\":2,\"nome\":\"teste 2\",\"isAluno\":true}"],"endereco":{"rua":"teste","CEP":"09052","numero":233,"cidade":{"id":1,"nome":"Torres"},"telefone":{"ddd":55,"numero":"48991749818"}}}]}
+{
+    "alunos": [
+        {
+            "id": "1",
+            "nome": "Natan Valim Cardoso",
+            "idade": 21,
+            "isAluno": true,
+            "nomesCurso": [
+                "Masterclass",
+                "Alura",
+                "Udemy Flutter",
+                "Academia do Flutter",
+                "TESTE TESTE"
+            ],
+            "cursos": [
+                "{\"id\":1,\"nome\":\"Masterclass\",\"isAluno\":true}",
+                "{\"id\":2,\"nome\":\"Imersão Bloc\",\"isAluno\":false}"
+            ],
+            "endereco": {
+                "rua": "Rua Governador Jorge Lacerda",
+                "CEP": "09050496911",
+                "numero": 12,
+                "cidade": {
+                    "id": 1,
+                    "nome": "São Paulo"
+                },
+                "telefone": {
+                    "ddd": 11,
+                    "numero": "48991749818"
+                }
+            }
+        },
+        {
+            "id": "2",
+            "nome": "Ana Valim Cardoso",
+            "idade": 17,
+            "isAluno": false,
+            "nomesCurso": [
+                "Masterclass",
+                "Alura",
+                "Udemy Flutter",
+                "Academia do Flutter",
+                "TESTE TESTE"
+            ],
+            "cursos": [
+                "{\"id\":1,\"nome\":\"Masterclass\",\"isAluno\":true}",
+                "{\"id\":2,\"nome\":\"Imersão Bloc\",\"isAluno\":false}"
+            ],
+            "endereco": {
+                "rua": "Rua Governador Jorge Lacerda",
+                "CEP": "09050496911",
+                "numero": 12,
+                "cidade": {
+                    "id": 1,
+                    "nome": "São Paulo"
+                },
+                "telefone": {
+                    "ddd": 11,
+                    "numero": "48991749818"
+                }
+            }
+        },
+        {
+            "id": "9db01e80-18ac-11ed-b51f-d9bc21ae7416",
+            "nome": "Teste",
+            "idade": 15,
+            "isAluno": true,
+            "nomesCurso": [
+                "teste",
+                "teste"
+            ],
+            "cursos": [
+                "{\"id\":1,\"nome\":\"teste\",\"isAluno\":false}",
+                "{\"id\":2,\"nome\":\"teste 2\",\"isAluno\":true}"
+            ],
+            "endereco": {
+                "rua": "teste",
+                "CEP": "09052",
+                "numero": 233,
+                "cidade": {
+                    "id": 1,
+                    "nome": "Torres"
+                },
+                "telefone": {
+                    "ddd": 55,
+                    "numero": "48991749818"
+                }
+            }
+        },
+        {
+            "id": "a76ddcf0-18ac-11ed-b51f-d9bc21ae7416",
+            "nome": "Teste",
+            "idade": 15,
+            "isAluno": true,
+            "nomesCurso": [
+                "teste",
+                "teste"
+            ],
+            "cursos": [
+                "{\"id\":1,\"nome\":\"teste\",\"isAluno\":false}",
+                "{\"id\":2,\"nome\":\"teste 2\",\"isAluno\":true}"
+            ],
+            "endereco": {
+                "rua": "teste",
+                "CEP": "09052",
+                "numero": 233,
+                "cidade": {
+                    "id": 1,
+                    "nome": "Torres"
+                },
+                "telefone": {
+                    "ddd": 55,
+                    "numero": "48991749818"
+                }
+            }
+        }
+    ]
+}
