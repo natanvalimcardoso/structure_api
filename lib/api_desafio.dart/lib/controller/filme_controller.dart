@@ -7,4 +7,9 @@ class FilmeController {
     final filmes = await _filmeRepository.findAll();
     filmes.forEach(print);
   }
+
+  Future<void> findById(String id) async {
+    final filme = await _filmeRepository.findById(id);
+    print(filme);
+  }
 }
