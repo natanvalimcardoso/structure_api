@@ -14,7 +14,7 @@ class Filme {
   final String releaseDate;
   final String title;
   final bool video;
-  final double voteAverage;
+  final num voteAverage;
   final int voteCount;
 
   Filme({
@@ -67,7 +67,7 @@ class Filme {
       releaseDate: map['release_date'] ?? '',
       title: map['title'] ?? '',
       video: map['video'] ?? false,
-      voteAverage: map['vote_average'] ?? 0.0,
+      voteAverage: map['vote_average'] ?? 0,
       voteCount: map['vote_count'] ?? 0,
     );
   }
