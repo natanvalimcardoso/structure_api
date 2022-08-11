@@ -1,4 +1,6 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
+import 'dart:convert';
+
 class Filme {
   final bool adult;
   final String backdropPath;
@@ -31,6 +33,53 @@ class Filme {
     required this.voteAverage,
     required this.voteCount,
   });
+
+  Map<String, dynamic> toMap() {
+    return <String, dynamic>{
+      'adult': adult,
+      'backdrop_path': backdropPath,
+      'genre_ids': genreids,
+      'id': id,
+      'original_language': originalLanguage,
+      'original_title': originalTitle,
+      'overview': overview,
+      'popularity': popularity,
+      'poster_path': posterPath,
+      'release_date': releaseDate,
+      'title': title,
+      'video': video,
+      'vote_average': voteAverage,
+      'vote_count': voteCount,
+    };
+  }
+
+  factory Filme.fromMap(Map<String, dynamic> map) {
+    return Filme(
+      adult: map['adult'] ?? false,
+      backdropPath: map['backdrop_path'] ?? '',
+      genreids: List<int>.from(map['genre_ids']),
+      id: map['id'] ?? '',
+      originalLanguage: map['original_language'] ?? '',
+      originalTitle: map['original_title'] ?? '',
+      overview: map['overview'] ?? '',
+      popularity: map['popularity'] ?? 0.0,
+      posterPath: map['poster_path'] ?? '',
+      releaseDate: map['release_date'] ?? '',
+      title: map['title'] ?? '',
+      video: map['video'] ?? false,
+      voteAverage: map['vote_average'] ?? 0.0,
+      voteCount: map['vote_count'] ?? 0,
+    );
+  }
+
+  String toJson() => json.encode(toMap());
+
+  factory Filme.fromJson(String source) => Filme.fromMap(json.decode(source));
+
+  @override
+  String toString() {
+    return 'Filme(adult: $adult, backdropPath: $backdropPath, genreids: $genreids, id: $id, originalLanguage: $originalLanguage, originalTitle: $originalTitle, overview: $overview, popularity: $popularity, posterPath: $posterPath, releaseDate: $releaseDate, title: $title, video: $video, voteAverage: $voteAverage, voteCount: $voteCount)';
+  }
 }
 
 
