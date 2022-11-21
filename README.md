@@ -1,1 +1,1 @@
-An absolute bare-bones web app.
+Api's consumidas na academia do flutter
